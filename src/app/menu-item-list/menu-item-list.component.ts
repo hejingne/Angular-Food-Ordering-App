@@ -7,9 +7,13 @@ import { menuItems } from '../menuItems';
   styleUrls: ['./menu-item-list.component.css']
 })
 export class MenuItemListComponent{
-  menuItems = menuItems;
+  items = menuItems;
 
   share() {
     window.alert("This item has been shared!");
+  }
+
+  onNotify() {
+    window.alert("You will be notified when this menu item is on promotion")
   }
 }

@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { MenuItemListComponent } from './menu-item-list/menu-item-list.component';
+import { MenuItemAlertsComponent } from './menu-item-alerts/menu-item-alerts.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { MenuItemListComponent } from './menu-item-list/menu-item-list.component
   declarations: [
     AppComponent,
     TopBarComponent,
-    MenuItemListComponent
+    MenuItemListComponent,
+    MenuItemAlertsComponent
   ],
   bootstrap: [
     AppComponent

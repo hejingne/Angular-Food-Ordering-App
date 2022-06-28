@@ -23,5 +23,11 @@ export const menuItems = [
     name: 'Thai Iced Tea',
     price: 3.99,
     description: 'Refreshing drink made of brewed black tea and spices'
+  },
+  {
+    id: 4,
+    name: 'Khao Soi',
+    price: 11.99,
+    description: ''
   }
 ];
