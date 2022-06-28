@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { MenuItemListComponent } from './menu-item-list/menu-item-list.component';
 import { MenuItemAlertsComponent } from './menu-item-alerts/menu-item-alerts.component';
 import { MenuItemDetailsComponent } from './menu-item-details/menu-item-details.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { MenuItemDetailsComponent } from './menu-item-details/menu-item-details.
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: MenuItemListComponent },
-      { path: 'items/:itemId', component: MenuItemDetailsComponent }
+      { path: 'items/:itemId', component: MenuItemDetailsComponent },
+      { path: 'shopping-cart', component: ShoppingCartComponent }
     ])
   ],
   declarations: [
@@ -23,7 +25,8 @@ import { MenuItemDetailsComponent } from './menu-item-details/menu-item-details.
     TopBarComponent,
     MenuItemListComponent,
     MenuItemAlertsComponent,
-    MenuItemDetailsComponent
+    MenuItemDetailsComponent,
+    ShoppingCartComponent
   ],
   bootstrap: [
     AppComponent
