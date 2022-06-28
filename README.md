@@ -1,5 +1,5 @@
 # AngularFoodOrderingApp
-This application is implemented with the Angular framework and it features the main functionalities of an online food ordering site such as a catalog, shopping cart and check-out form.\
+This application is implemented with the Angular framework and it features the main functionalities of an online food ordering site such as a basic menu item catalog, shopping cart and check-out form.\
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
 
 ## Development server

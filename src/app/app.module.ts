@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { MenuItemListComponent } from './menu-item-list/menu-item-list.component';
 import { MenuItemAlertsComponent } from './menu-item-alerts/menu-item-alerts.component';
+import { MenuItemDetailsComponent } from './menu-item-details/menu-item-details.component';
 
 @NgModule({
   imports: [
@@ -14,13 +15,15 @@ import { MenuItemAlertsComponent } from './menu-item-alerts/menu-item-alerts.com
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: MenuItemListComponent },
+      { path: 'items/:itemId', component: MenuItemDetailsComponent }
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     MenuItemListComponent,
-    MenuItemAlertsComponent
+    MenuItemAlertsComponent,
+    MenuItemDetailsComponent
   ],
   bootstrap: [
     AppComponent

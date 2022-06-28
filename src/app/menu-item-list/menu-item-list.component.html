@@ -3,7 +3,8 @@
 <div *ngFor="let item of items">
   <h3>
 
-    <a [title]="item.name + ' details'"> {{item.name}} </a>
+    <a [title]="item.name + ' details'"
+       [routerLink]="['/items', item.id]"> {{item.name}} </a>
 
     <p *ngIf="item.description"> Description: {{item.description}} </p>
     <div *ngIf="!item.description"></div>
