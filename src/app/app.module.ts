@@ -9,11 +9,13 @@ import { MenuItemListComponent } from './menu-item-list/menu-item-list.component
 import { MenuItemAlertsComponent } from './menu-item-alerts/menu-item-alerts.component';
 import { MenuItemDetailsComponent } from './menu-item-details/menu-item-details.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: MenuItemListComponent },
       { path: 'items/:itemId', component: MenuItemDetailsComponent },
