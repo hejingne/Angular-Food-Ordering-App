@@ -10,6 +10,7 @@ import { MenuItemAlertsComponent } from './menu-item-alerts/menu-item-alerts.com
 import { MenuItemDetailsComponent } from './menu-item-details/menu-item-details.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule.forRoot([
       { path: '', component: MenuItemListComponent },
       { path: 'items/:itemId', component: MenuItemDetailsComponent },
-      { path: 'shopping-cart', component: ShoppingCartComponent }
+      { path: 'shopping-cart', component: ShoppingCartComponent },
+      { path: 'shipping', component: ShippingComponent }
     ])
   ],
   declarations: [
@@ -28,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     MenuItemListComponent,
     MenuItemAlertsComponent,
     MenuItemDetailsComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    ShippingComponent
   ],
   bootstrap: [
     AppComponent
